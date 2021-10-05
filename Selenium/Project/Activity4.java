@@ -22,7 +22,7 @@ public class Activity4 {
 	
 	@Test
 	public void verifyTitleOfSecondCourse() {
-		String courseTitle = driver.findElement(By.xpath("//h3[contains(text(),'Email')]")).getText();
+		String courseTitle = driver.findElement(By.xpath("//div[@class='ld-course-list-items row']/div[@class='ld_course_grid col-sm-8 col-md-4 '][2]/article/div/h3")).getText();
 		assertEquals(courseTitle, "Email Marketing Strategies");
 	}
 	
